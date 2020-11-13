@@ -1,0 +1,59 @@
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  //   border: 1px solid black;
+  padding: 1rem;
+
+  &__logo {
+    max-width: 50%;
+  }
+
+  &__logo img {
+    width: 200px;
+  }
+  &__btn {
+    position: absolute;
+    z-index: 1;
+    right: 2rem;
+    top: 2rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+
+    &__burger {
+      position: absolute;
+      right: 0;
+      top: 0.5rem;
+      width: 28px;
+      height: 3px;
+      background: $primary-color-black;
+      @include transition-ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background-color: $primary-color-black;
+        @include transition-ease;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+        background-color: $primary-color-black;
+        @include transition-ease;
+      }
+    }
+  }
+}
+
+.nav {
+  display: none;
+}

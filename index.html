@@ -9,6 +9,12 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="/assets/css/main.css" />
 
@@ -16,12 +22,15 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="/assets/shared/desktop/logo-dark.png" alt="" />
+      <div class="mobile-menu">
+        <div class="mobile-menu__logo">
+          <img src="/assets/shared/desktop/logo-dark.png" alt="" />
+        </div>
+        <div class="mobile-menu__btn">
+          <span class="mobile-menu__btn__burger"></span>
+        </div>
       </div>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div>
+
       <nav class="nav">
         <ul class="menu-nav">
           <li class="menu-nav__item">
@@ -37,6 +46,8 @@
       </nav>
     </header>
     <main>
+      <!-- HOME SECTION -->
+
       <section class="home">
         <h1>Award-winning custom designs and digital branding solutions</h1>
         <p>
@@ -48,25 +59,123 @@
           <button>Learn more</button>
         </div>
         <img src="/assets/home/desktop/image-hero-phone.png" alt="" />
+
+        <!-- PROJECTS -->
+
         <div class="projects">
-          <div class="project__items"></div>
+          <div class="projects__items">
+            <div class="projects__item">
+              <img src="/assets/home/mobile/image-web-design.jpg" alt="" />
+              <h2 class="projects__title">Web Design</h2>
+              <a href="#" class="projects__link">View Projects</a>
+            </div>
+            <div class="projects__item">
+              <img src="/assets/home/mobile/image-app-design.jpg" alt="" />
+              <h2 class="projects__title">App Design</h2>
+              <a href="#" class="projects__link">View Projects</a>
+            </div>
+            <div class="projects__item">
+              <img src="/assets/home/mobile/image-graphic-design.jpg" alt="" />
+              <h2 class="projects__title">Graphic Design</h2>
+              <a href="#" class="projects__link">View Projects</a>
+            </div>
+          </div>
         </div>
+
+        <!-- RESOURCE SECTION -->
+
+        <div class="resources">
+          <div class="resources__items">
+            <div class="resources__item">
+              <img
+                src="/assets/home/desktop/illustration-passionate.svg"
+                alt=""
+              />
+              <h2 class="resources__title">Passionate</h2>
+              <p class="resources__para">
+                Each project starts with an in-depth brand research to ensure we
+                only create products that serve a purpose. We merge art, design,
+                and technology into exciting new solutions.
+              </p>
+            </div>
+            <div class="resources__item">
+              <img
+                src="/assets/home/desktop/illustration-resourceful.svg"
+                alt=""
+              />
+              <h2 class="resources__title">Resourceful</h2>
+              <p class="resources__para">
+                Everything that we do has a strategic purpose. We use an agile
+                approach in all of our projects and value customer
+                collaboration. It guarantees superior results that fulfill our
+                clients’ needs.
+              </p>
+            </div>
+            <div class="resources__item">
+              <img
+                src="/assets/home/desktop/illustration-friendly.svg"
+                alt=""
+              />
+              <h2 class="resources__title">Friendly</h2>
+              <p class="resources__para">
+                We are a group of enthusiastic folks who know how to put people
+                first. Our success depends on our customers, and we strive to
+                give them the best experience a company can provide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- MIDDLE SECTION -->
+        <div class="middle">
+          <div class="middle__items">
+            <h3>Let's talk about your project</h3>
+            <p>
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow. Get in
+            </p>
+            <div class="btn">
+              <button type="button">Get in touch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+          <div class="footer__items">
+            <div class="footer__item">
+              <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <div class="footer__address">
+                <h4>Designo Central Office</h4>
+                <p>3886 Wellington Street Toronto, Ontario M9C 3J5</p>
+              </div>
+              <div class="footer__contact">
+                <h4>Contact Us (Central Office)</h4>
+                <p>P : +1 253-863-8967</p>
+                <p>M : contact@designo.co</p>
+              </div>
+            </div>
+          </div>
+          <div class="social__icons">
+            <a href="#!">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </footer>
       </section>
     </main>
-
-    Web Design View Projects App Design View Projects Graphic Design View
-    Projects Passionate Each project starts with an in-depth brand research to
-    ensure we only create products that serve a purpose. We merge art, design,
-    and technology into exciting new solutions. Resourceful Everything that we
-    do has a strategic purpose. We use an agile approach in all of our projects
-    and value customer collaboration. It guarantees superior results that
-    fulfill our clients’ needs. Friendly We are a group of enthusiastic folks
-    who know how to put people first. Our success depends on our customers, and
-    we strive to give them the best experience a company can provide. Let’s talk
-    about your project Ready to take it to the next level? Contact us today and
-    find out how our expertise can help your business grow. Get in touch Our
-    company Locations Contact Designo Central Office 3886 Wellington Street
-    Toronto, Ontario M9C 3J5 Contact Us (Central Office) P : +1 253-863-8967 M :
-    contact@designo.co
   </body>
 </html>

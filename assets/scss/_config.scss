@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
 
+$primary-color-peach: #e7816b;
+$primary-color-black: #1d1c1e;
+$primary-color-white: #ffffff;
+$secondary-color-lightPeach: #ffad9b;
+$secondary-color-white: #333136;
+$secondary-color-white: #f1f3f5;
+
+$small-font: 16px;
+$medium-font: 20px;
+$large-font: 40px;
+$xl-font: 48px;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
 }
