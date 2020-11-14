@@ -76,6 +76,56 @@
   display: none;
 }
 
+.home {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: #e7816b;
+  background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+}
+
+.home__heading {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.home__btn {
+  padding-top: 20px;
+}
+
+.home__btn button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 18px 20px;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.home__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__hero img {
+  margin-top: -5rem;
+  padding-top: 0;
+}
+
 body {
   height: 100vh;
   width: 100%;
