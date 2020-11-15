@@ -79,6 +79,7 @@
 .home {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   color: #ffffff;
   background: #ffffff;
   -webkit-box-align: center;
@@ -95,6 +96,7 @@
   padding-top: 3rem;
   padding-bottom: 2rem;
   font-size: 30px;
+  font-weight: 500;
   line-height: 35px;
 }
 
@@ -122,8 +124,33 @@
 }
 
 .home__hero img {
-  margin-top: -5rem;
-  padding-top: 0;
+  margin-top: -6rem;
+}
+
+.projects {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  background: #ffffff;
+  padding: 1rem;
+}
+
+.projects__item img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.projects__item img::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1d1c1e;
+  opacity: 1;
 }
 
 body {
