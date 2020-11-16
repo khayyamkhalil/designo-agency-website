@@ -62,3 +62,64 @@
     letter-spacing: 1px;
   }
 }
+
+/** PROJECT DESIGN DETAILS **/
+
+.design__main {
+  width: 100%;
+  color: $primary-color-white;
+  text-align: center;
+  padding: 1rem;
+  background: $primary-color-peach;
+  background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+
+  &__heading {
+    padding-top: 3rem;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  &__para {
+    padding: 2rem;
+  }
+}
+
+.design {
+  margin-top: 4rem;
+  background: $primary-color-white;
+  padding: 1rem;
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    // color: $primary-color-white;
+
+    img {
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__details {
+    margin-top: -0.6rem;
+    padding: 2rem 1rem;
+    background: $secondary-color-lightPeach;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  &__title {
+    color: $primary-color-peach;
+    font-weight: 700;
+  }
+}
