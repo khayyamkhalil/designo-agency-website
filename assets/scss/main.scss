@@ -56,18 +56,23 @@ ul li {
 /********** MIDDLE SECTION **********/
 .footer {
   position: relative;
-  margin-top: 14rem;
+  margin-top: 20rem;
 
   &__middle {
     position: absolute;
     top: -15rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin: 1rem;
     background: $primary-color-peach;
+    background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
     color: $primary-color-white;
     padding: 4rem 1rem;
     border-radius: 1rem;
     text-align: center;
-    // max-width: 100%;
+    max-width: 100%;
 
     &__title {
       font-size: $large-font;
@@ -87,6 +92,7 @@ ul li {
         padding: 18px 20px;
         border-radius: 0.4rem;
         border: none;
+        cursor: pointer;
       }
     }
   }
@@ -98,12 +104,14 @@ ul li {
     color: $secondary-color-lightGrey;
 
     &__logo {
+      // max-width: 50%;
+      // margin: 0 auto;
       display: flex;
       justify-content: center;
 
       img {
         margin-top: 15rem; // need to change to overlap
-        width: 250px;
+        width: 200px;
       }
     }
 

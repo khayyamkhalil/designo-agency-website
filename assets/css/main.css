@@ -112,6 +112,7 @@
   padding: 18px 20px;
   border-radius: 0.4rem;
   border: none;
+  cursor: pointer;
 }
 
 .home__hero {
@@ -205,7 +206,7 @@
 }
 
 .resources {
-  margin-top: 6rem;
+  margin-top: 5rem;
   background: #ffffff;
   padding: 1rem;
 }
@@ -293,19 +294,25 @@ ul li {
 /********** MIDDLE SECTION **********/
 .footer {
   position: relative;
-  margin-top: 14rem;
+  margin-top: 20rem;
   /********** FOOTER SECTION **********/
 }
 
 .footer__middle {
   position: absolute;
   top: -15rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin: 1rem;
   background: #e7816b;
+  background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
   color: #ffffff;
   padding: 4rem 1rem;
   border-radius: 1rem;
   text-align: center;
+  max-width: 100%;
 }
 
 .footer__middle__title {
@@ -327,6 +334,7 @@ ul li {
   padding: 18px 20px;
   border-radius: 0.4rem;
   border: none;
+  cursor: pointer;
 }
 
 .footer__bottom {
@@ -345,7 +353,7 @@ ul li {
 
 .footer__bottom__logo img {
   margin-top: 15rem;
-  width: 250px;
+  width: 200px;
 }
 
 .footer__bottom__items {
