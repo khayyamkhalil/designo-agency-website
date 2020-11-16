@@ -2,6 +2,7 @@
 @import "./menu";
 @import "./home";
 @import "./projects";
+@import "./resources";
 
 body {
   height: 100vh;
@@ -44,4 +45,96 @@ main {
 
 a {
   text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+/********** MIDDLE SECTION **********/
+.footer {
+  position: relative;
+  margin-top: 14rem;
+
+  &__middle {
+    position: absolute;
+    top: -15rem;
+    margin: 1rem;
+    background: $primary-color-peach;
+    color: $primary-color-white;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    // max-width: 100%;
+
+    &__title {
+      font-size: $large-font;
+      font-weight: 500;
+      padding: 0.4rem;
+      padding-bottom: 1rem;
+    }
+
+    &__btn {
+      padding-top: 20px;
+
+      button {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 18px 20px;
+        border-radius: 0.4rem;
+        border: none;
+      }
+    }
+  }
+
+  /********** FOOTER SECTION **********/
+
+  &__bottom {
+    background: $primary-color-black;
+    color: $secondary-color-lightGrey;
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin-top: 15rem; // need to change to overlap
+        width: 250px;
+      }
+    }
+
+    &__items {
+      text-align: center;
+      color: $secondary-color-lightGrey;
+      padding: 2rem;
+
+      ul li {
+        padding: 0.8rem 0;
+        list-style: none;
+        font-size: $small-font;
+        text-transform: uppercase;
+
+        a {
+          color: $secondary-color-lightGrey;
+          font-weight: 400;
+        }
+      }
+    }
+    &__address {
+      padding: 2rem;
+    }
+
+    &__contact {
+      padding: 2rem;
+    }
+
+    &__social a {
+      padding: 0.8rem;
+      color: $primary-color-peach;
+    }
+  }
 }
