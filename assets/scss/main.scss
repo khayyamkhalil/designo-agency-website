@@ -53,6 +53,21 @@ ul li {
   color: white;
 }
 
+.btn {
+  padding-top: 20px;
+
+  button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 18px 20px;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 /********** MIDDLE SECTION **********/
 .footer {
   position: relative;
@@ -81,20 +96,20 @@ ul li {
       padding-bottom: 1rem;
     }
 
-    &__btn {
-      padding-top: 20px;
+    // &__btn {
+    //   padding-top: 20px;
 
-      button {
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 2px;
-        padding: 18px 20px;
-        border-radius: 0.4rem;
-        border: none;
-        cursor: pointer;
-      }
-    }
+    //   button {
+    //     text-transform: uppercase;
+    //     font-size: 14px;
+    //     font-weight: 500;
+    //     letter-spacing: 2px;
+    //     padding: 18px 20px;
+    //     border-radius: 0.4rem;
+    //     border: none;
+    //     cursor: pointer;
+    //   }
+    // }
   }
 
   /********** FOOTER SECTION **********/

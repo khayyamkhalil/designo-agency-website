@@ -10,6 +10,7 @@
   background: $primary-color-peach;
   background-image: url(/assets/home/desktop/bg-pattern-hero-home.svg);
   background-repeat: no-repeat;
+  z-index: 20;
 
   &__heading {
     padding-top: 3rem;
@@ -19,20 +20,20 @@
     line-height: 35px;
   }
 
-  &__btn {
-    padding-top: 20px;
+  // &__btn {
+  //   padding-top: 20px;
 
-    button {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      padding: 18px 20px;
-      border-radius: 0.4rem;
-      border: none;
-      cursor: pointer; // Its not working, need to figure out why???
-    }
-  }
+  //   button {
+  //     text-transform: uppercase;
+  //     font-size: 14px;
+  //     font-weight: 500;
+  //     letter-spacing: 2px;
+  //     padding: 18px 20px;
+  //     border-radius: 0.4rem;
+  //     border: none;
+  //     cursor: pointer; // Its not working, need to figure out why???
+  //   }
+  // }
 
   &__hero {
     display: flex;
