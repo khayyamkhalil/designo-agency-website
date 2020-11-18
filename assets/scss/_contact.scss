@@ -1,0 +1,43 @@
+.contact {
+  width: 100%;
+  text-align: center;
+
+  &__details {
+    padding: 2rem 1rem;
+    background: $primary-color-peach;
+    color: $primary-color-white;
+    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  &__heading {
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  &__para {
+    padding: 2rem 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      color: $secondary-color-lightGrey;
+      padding: 1rem;
+      padding-top: 2rem;
+      background: $primary-color-peach;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid $primary-color-white;
+    }
+
+    ::placeholder {
+      color: $primary-color-white;
+      opacity: 0.6;
+    }
+  }
+}

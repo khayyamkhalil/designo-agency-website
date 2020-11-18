@@ -343,23 +343,23 @@
 }
 
 /** LOCATIONS **/
-.locations {
+.location {
   padding: 2rem 1rem;
 }
 
-.locations__item {
+.location__item {
   padding: 2rem;
 }
 
-.locations__item img {
+.location__item img {
   background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
 }
 
-.locations__title {
+.location__title {
   padding-top: 2rem;
 }
 
-.locations__btn button {
+.location__btn button {
   background: #e88069;
   color: white;
 }
@@ -432,6 +432,71 @@
   font-weight: 500;
   line-height: 35px;
   color: #e88069;
+}
+
+.contact {
+  width: 100%;
+  text-align: center;
+}
+
+.contact__details {
+  padding: 2rem 1rem;
+  background: #e88069;
+  color: white;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.contact__heading {
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.contact__para {
+  padding: 2rem 1rem;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form input,
+.contact__form textarea {
+  color: #f0f2f4;
+  padding: 1rem;
+  padding-top: 2rem;
+  background: #e88069;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.contact__form ::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.contact__form :-ms-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.contact__form ::-ms-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+.contact__form ::placeholder {
+  color: white;
+  opacity: 0.6;
 }
 
 body {

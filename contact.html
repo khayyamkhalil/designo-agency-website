@@ -1,48 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <title>Designo Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile-menu">
+        <div class="mobile-menu__logo">
+          <img src="/assets/shared/desktop/logo-dark.png" alt="" />
+        </div>
+        <div class="mobile-menu__btn">
+          <span class="mobile-menu__btn__burger"></span>
+        </div>
+      </div>
 
-  Contact us
-  Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-  we can help your business grow. If you are looking for unique digital experiences that’s 
-  relatable to your users, drop us a line.
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link active">Our Company</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Locations</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  Name
-  Email address
-  Phone
-  Your message
-  Submit
+    <!-- CONTACT SECTION -->
 
-  Canada
-  See location
+    <section class="contact">
+      <div class="contact__main">
+        <div class="contact__details">
+          <h2 class="contact__heading">Contact Us</h2>
+          <p class="contact__para">
+            Ready to take it to the next level? Let’s talk about your project or
+            idea and find out how we can help your business grow. If you are
+            looking for unique digital experiences that’s relatable to your
+            users, drop us a line.
+          </p>
+          <form class="contact__form" action="#">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="name"
+              placeholder="Email Address"
+              required
+            />
+            <input type="text" name="name" placeholder="Phone" required />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <div class="contact__btn btn">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-  Australia
-  See location
+      <div class="location">
+        <div class="location__item">
+          <img src="/assets/shared/desktop/illustration-canada.svg" alt="" />
+          <h3 class="location__title">Canada</h3>
+          <div class="location__btn btn">
+            <button type="button">See Location</button>
+          </div>
+        </div>
 
-  United Kingdom
-  See location
+        <div class="location__item">
+          <img src="/assets/shared/desktop/illustration-australia.svg" alt="" />
+          <h3 class="location__title">Australia</h3>
+          <div class="location__btn btn">
+            <button type="button">See Location</button>
+          </div>
+        </div>
 
-  Our company
-  Locations
-  Contact
+        <div class="location__item">
+          <img
+            src="/assets/shared/desktop/illustration-united-kingdom.svg"
+            alt=""
+          />
+          <h3 class="location__title">United Kingdom</h3>
+          <div class="location__btn btn">
+            <button type="button">See Location</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
+    <!-- FOOTER -->
 
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+    <!-- MIDDLE SECTION -->
+    <footer class="footer">
+      <div class="footer__middle">
+        <div class="footer__middle__items">
+          <h2 class="footer__middle__title">Let's talk about your project</h2>
+          <p class="footer__middle__para">
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <div class="footer__middle__btn btn">
+            <button type="button">Get in touch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION -->
+      <div class="footer__bottom">
+        <div class="footer__bottom__logo">
+          <img src="/assets/shared/desktop/logo-light.png" alt="" />
+        </div>
+
+        <div class="footer__bottom__items">
+          <ul>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="footer__bottom__address">
+            <h4>Designo Central Office</h4>
+            <p>3886 Wellington Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
+          </div>
+
+          <div class="footer__bottom__contact">
+            <h4>Contact Us (Central Office)</h4>
+            <p>P : +1 253-863-8967</p>
+            <p>M : contact@designo.co</p>
+          </div>
+
+          <div class="footer__bottom__social">
+            <a href="#!">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
