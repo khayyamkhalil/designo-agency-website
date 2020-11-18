@@ -396,6 +396,44 @@
   padding: 2rem 1rem;
 }
 
+.locations {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.locations img {
+  width: 100%;
+}
+
+.locations h4 {
+  color: #1c1b1d;
+}
+
+.locations p {
+  color: #1c1b1d;
+}
+
+.locations__details {
+  width: 100%;
+  margin-top: -0.6rem;
+  padding: 2rem 1rem;
+  padding-bottom: 4rem;
+  background: #ffac99;
+  color: white;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+
+.locations__heading {
+  padding: 2rem 0 2rem 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #e88069;
+}
+
 body {
   height: 100vh;
   width: 100%;

@@ -1,60 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+    <title>Designo Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="mobile-menu">
+        <div class="mobile-menu__logo">
+          <img src="/assets/shared/desktop/logo-dark.png" alt="" />
+        </div>
+        <div class="mobile-menu__btn">
+          <span class="mobile-menu__btn__burger"></span>
+        </div>
+      </div>
 
-  Canada
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link active">Our Company</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Locations</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  Contact
-  P : +1 253-863-8967
-  M : contact@designo.co
+    <!-- LOCATIONS SECTION -->
 
-  Australia
-  Designo AU Office
-  19 Balonne Street
-  New South Wales 2443
+    <section class="locations">
+      <div class="locations__main">
+        <div class="locations__img">
+          <img src="/assets/locations/desktop/image-map-canada.png" alt="" />
+        </div>
+        <div class="locations__details">
+          <h2 class="locations__heading">Canada</h2>
+          <div class="locations__address">
+            <h4>Designo Central Office</h4>
+            <p>3886 Wellington Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
+            <br />
+            <h4>Contact</h4>
+            <p>P : +1 253-863-8967</p>
+            <p>M : contact@designo.co</p>
+          </div>
+        </div>
+      </div>
 
-  Contact
-  P : (02) 6720 9092
-  M : contact@designo.au
+      <div class="locations__main">
+        <div class="locations__img">
+          <img src="/assets/locations/desktop/image-map-australia.png" alt="" />
+        </div>
+        <div class="locations__details">
+          <h2 class="locations__heading">Australia</h2>
+          <div class="locations__address">
+            <h4>Designo AU Office</h4>
+            <p>19 Balonne Street</p>
+            <p>New South Wales 2443</p>
+            <br />
+            <h4>Contact</h4>
+            <p>P : (02) 6720 9092</p>
+            <p>M : contact@designo.au</p>
+          </div>
+        </div>
+      </div>
 
-  United Kingdom
-  Designo UK Office
-  13 Colorado Way
-  Rhyd-y-fro SA8 9GA
+      <div class="locations__main">
+        <div class="locations__img">
+          <img
+            src="/assets/locations/desktop/image-map-united-kingdom.png"
+            alt=""
+          />
+        </div>
+        <div class="locations__details">
+          <h2 class="locations__heading">United Kingdom</h2>
+          <div class="locations__address">
+            <h4>Designo UK Office</h4>
+            <p>13 Colorado Way</p>
+            <p>Rhyd-y-fro SA8 9GA</p>
+            <br />
+            <h4>Contact</h4>
+            <p>P : 078 3115 1400</p>
+            <p>M : contact@designo.uk</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Contact
-  P : 078 3115 1400
-  M : contact@designo.uk
+    <!-- FOOTER -->
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+    <!-- MIDDLE SECTION -->
+    <footer class="footer">
+      <div class="footer__middle">
+        <div class="footer__middle__items">
+          <h2 class="footer__middle__title">Let's talk about your project</h2>
+          <p class="footer__middle__para">
+            Ready to take it to the next level? Contact us today and find out
+            how our expertise can help your business grow.
+          </p>
+          <div class="footer__middle__btn btn">
+            <button type="button">Get in touch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM SECTION -->
+      <div class="footer__bottom">
+        <div class="footer__bottom__logo">
+          <img src="/assets/shared/desktop/logo-light.png" alt="" />
+        </div>
+
+        <div class="footer__bottom__items">
+          <ul>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="footer__bottom__address">
+            <h4>Designo Central Office</h4>
+            <p>3886 Wellington Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
+          </div>
+
+          <div class="footer__bottom__contact">
+            <h4>Contact Us (Central Office)</h4>
+            <p>P : +1 253-863-8967</p>
+            <p>M : contact@designo.co</p>
+          </div>
+
+          <div class="footer__bottom__social">
+            <a href="#!">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="#!">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

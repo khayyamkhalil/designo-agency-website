@@ -1,0 +1,37 @@
+.locations {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+
+  img {
+    width: 100%;
+  }
+
+  h4 {
+    color: $primary-color-black;
+  }
+
+  p {
+    color: $primary-color-black;
+  }
+
+  &__details {
+    width: 100%;
+    margin-top: -0.6rem;
+    padding: 2rem 1rem;
+    padding-bottom: 4rem;
+    background: $secondary-color-lightPeach;
+    color: $primary-color-white;
+    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    padding: 2rem 0 2rem 0;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: $primary-color-peach;
+  }
+}
