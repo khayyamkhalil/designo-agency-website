@@ -1,0 +1,106 @@
+.about {
+  width: 100%;
+  text-align: center;
+  //   padding: 1rem;
+
+  &__img img {
+    width: 100%;
+  }
+
+  &__details {
+    margin-top: -0.6rem;
+    padding: 2rem 1rem;
+    background: $primary-color-peach;
+    color: $primary-color-white;
+    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  &__heading {
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  &__para {
+    padding: 2rem 1rem;
+  }
+
+  /** TALENT **/
+
+  &__talent {
+    margin-top: -0.6rem;
+    padding: 2rem 1rem;
+    background: $secondary-color-lightPeach;
+    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+
+    &__title {
+      color: $primary-color-peach;
+      padding-top: 2rem;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+
+    &__para {
+      padding: 1rem;
+    }
+  }
+}
+
+/** LOCATIONS **/
+
+.locations {
+  padding: 2rem 1rem;
+
+  &__item {
+    padding: 2rem;
+
+    img {
+      background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+    }
+  }
+
+  &__title {
+    padding-top: 2rem;
+  }
+
+  &__btn button {
+    background: $primary-color-peach;
+    color: $primary-color-white;
+  }
+}
+
+/** DEAL **/
+
+.deal {
+  width: 100%;
+  text-align: center;
+  //   padding: 1rem;
+
+  &__img img {
+    width: 100%;
+  }
+
+  &__details {
+    margin-top: -0.6rem;
+    padding: 2rem 1rem;
+    background: $secondary-color-lightPeach;
+    color: $primary-color-white;
+    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  &__heading {
+    color: $primary-color-peach;
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+  }
+
+  &__para {
+    color: $primary-color-black;
+    padding: 2rem 1rem;
+  }
+}

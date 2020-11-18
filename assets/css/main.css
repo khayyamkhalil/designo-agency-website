@@ -292,6 +292,110 @@
   font-weight: 500;
 }
 
+.about {
+  width: 100%;
+  text-align: center;
+  /** TALENT **/
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__details {
+  margin-top: -0.6rem;
+  padding: 2rem 1rem;
+  background: #e88069;
+  color: white;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.about__heading {
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.about__para {
+  padding: 2rem 1rem;
+}
+
+.about__talent {
+  margin-top: -0.6rem;
+  padding: 2rem 1rem;
+  background: #ffac99;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.about__talent__title {
+  color: #e88069;
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.about__talent__para {
+  padding: 1rem;
+}
+
+/** LOCATIONS **/
+.locations {
+  padding: 2rem 1rem;
+}
+
+.locations__item {
+  padding: 2rem;
+}
+
+.locations__item img {
+  background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+}
+
+.locations__title {
+  padding-top: 2rem;
+}
+
+.locations__btn button {
+  background: #e88069;
+  color: white;
+}
+
+/** DEAL **/
+.deal {
+  width: 100%;
+  text-align: center;
+}
+
+.deal__img img {
+  width: 100%;
+}
+
+.deal__details {
+  margin-top: -0.6rem;
+  padding: 2rem 1rem;
+  background: #ffac99;
+  color: white;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.deal__heading {
+  color: #e88069;
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.deal__para {
+  color: #1c1b1d;
+  padding: 2rem 1rem;
+}
+
 body {
   height: 100vh;
   width: 100%;
