@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
 
-// $primary-color-peach: #e7816b;
 $primary-color-peach: hsl(11, 73%, 66%);
-// $primary-color-black: #1d1c1e;
 $primary-color-black: hsl(270, 3%, 11%);
-// $primary-color-white: #ffffff;
 $primary-color-white: hsl(0, 0%, 100%);
-// $secondary-color-lightPeach: #ffad9b;
 $secondary-color-lightPeach: hsl(11, 100%, 80%);
-// $secondary-color-darkGrey: #333136;
-$secondary-color-darkGrey: hsl(264, 5%, 20%);
-// $secondary-color-lightGrey: #f1f3f5;
+$secondary-color-darkGrey: hsl(264, 5%, 50%);
 $secondary-color-lightGrey: hsl(210, 17%, 95%);
 
 $small-font: 16px;
@@ -26,4 +20,16 @@ $xl-font: 48px;
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
+}
+
+@mixin media-tablet {
+  @media screen and (min-width: 568px) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
 }
