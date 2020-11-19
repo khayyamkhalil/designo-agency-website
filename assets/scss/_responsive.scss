@@ -302,4 +302,81 @@
       border-radius: 0 0 1rem 1rem;
     }
   }
+
+  /***************** ABOUT *****************/
+
+  .about {
+    &__main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__img {
+      grid-column: 2/3;
+      img {
+        border-radius: 0 1rem 1rem 0;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      border-radius: 1rem 0 0 1rem;
+      margin: 0;
+      margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+      text-align: left;
+    }
+
+    &__talent {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      &__img {
+        grid-column: 1/2;
+        img {
+          border-radius: 1rem 0 0 1rem;
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 2/3;
+        border-radius: 0 1rem 1rem 0;
+        margin: 0;
+        margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+        text-align: left;
+      }
+    }
+
+    &__deal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      &__img {
+        grid-column: 2/3;
+        img {
+          border-radius: 0 1rem 1rem 0;
+        }
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 1rem 0 0 1rem;
+        margin: 0;
+        margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+        text-align: left;
+      }
+    }
+  }
+  .location {
+    display: flex;
+    justify-content: space-between;
+  }
 }
