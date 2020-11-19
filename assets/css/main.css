@@ -298,13 +298,14 @@
   width: 100%;
   text-align: center;
   /** TALENT **/
+  /** DEAL **/
 }
 
 .about__img img {
   width: 100%;
 }
 
-.about__details {
+.about__text {
   margin-top: -0.6rem;
   padding: 2rem 1rem;
   background: #e88069;
@@ -324,14 +325,6 @@
   padding: 2rem 1rem;
 }
 
-.about__talent {
-  width: 100%;
-}
-
-.about__talent__img {
-  margin-bottom: -0.5rem;
-}
-
 .about__talent__img img {
   width: 100%;
 }
@@ -341,9 +334,10 @@
   background: #ffeae6;
   background-repeat: no-repeat;
   padding: 2rem 1rem;
+  margin-top: -0.5rem;
 }
 
-.about__talent__title {
+.about__talent__heading {
   color: #e88069;
   padding-top: 2rem;
   font-size: 30px;
@@ -352,6 +346,36 @@
 }
 
 .about__talent__para {
+  padding: 1rem;
+}
+
+.about__deal {
+  text-align: center;
+}
+
+.about__deal__img img {
+  width: 100%;
+}
+
+.about__deal__text {
+  margin-top: -0.6rem;
+  padding: 2rem 1rem;
+  background: #ffeae6;
+  color: white;
+  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.about__deal__heading {
+  color: #e88069;
+  padding-top: 2rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.about__deal__para {
+  color: #1c1b1d;
   padding: 1rem;
 }
 
@@ -366,6 +390,7 @@
 
 .location__item img {
   background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+  background-repeat: no-repeat;
 }
 
 .location__title {
@@ -375,38 +400,6 @@
 .location__btn button {
   background: #e88069;
   color: white;
-}
-
-/** DEAL **/
-.deal {
-  width: 100%;
-  text-align: center;
-}
-
-.deal__img img {
-  width: 100%;
-}
-
-.deal__details {
-  margin-top: -0.6rem;
-  padding: 2rem 1rem;
-  background: #ffeae6;
-  color: white;
-  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
-  background-repeat: no-repeat;
-}
-
-.deal__heading {
-  color: #e88069;
-  padding-top: 2rem;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 35px;
-}
-
-.deal__para {
-  color: #1c1b1d;
-  padding: 2rem 1rem;
 }
 
 .locations {
@@ -656,21 +649,27 @@
         grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .about__img img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+  }
+  .about__text {
+    border-radius: 0 0 1rem 1rem;
+  }
   .about__main {
     margin-left: 2rem;
     margin-right: 2rem;
-    border-radius: 1rem;
   }
-  .about__talent {
+  .about__talent, .about__deal {
     margin-left: 2rem;
     margin-right: 2rem;
   }
-  .about__talent__img {
-    max-width: 100%;
-    overflow: hidden;
-  }
-  .about__talent__img img {
+  .about__talent__img img, .about__deal__img img {
+    border-radius: 1rem 1rem 0 0;
     width: 100%;
+  }
+  .about__talent__text, .about__deal__text {
+    border-radius: 0 0 1rem 1rem;
   }
 }
 

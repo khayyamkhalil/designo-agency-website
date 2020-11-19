@@ -1,13 +1,11 @@
 .about {
   width: 100%;
   text-align: center;
-  //   padding: 1rem;
 
   &__img img {
     width: 100%;
   }
-
-  &__details {
+  &__text {
     margin-top: -0.6rem;
     padding: 2rem 1rem;
     background: $primary-color-peach;
@@ -29,13 +27,8 @@
   /** TALENT **/
 
   &__talent {
-    width: 100%;
-
-    &__img {
-      margin-bottom: -0.5rem;
-      img {
-        width: 100%;
-      }
+    &__img img {
+      width: 100%;
     }
 
     &__text {
@@ -43,9 +36,10 @@
       background: $secondary-color-lightPeach;
       background-repeat: no-repeat;
       padding: 2rem 1rem;
+      margin-top: -0.5rem;
     }
 
-    &__title {
+    &__heading {
       color: $primary-color-peach;
       padding-top: 2rem;
       font-size: 30px;
@@ -54,6 +48,37 @@
     }
 
     &__para {
+      padding: 1rem;
+    }
+  }
+
+  /** DEAL **/
+
+  &__deal {
+    text-align: center;
+
+    &__img img {
+      width: 100%;
+    }
+
+    &__text {
+      margin-top: -0.6rem;
+      padding: 2rem 1rem;
+      background: $secondary-color-lightPeach;
+      color: $primary-color-white;
+      background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+      background-repeat: no-repeat;
+    }
+    &__heading {
+      color: $primary-color-peach;
+      padding-top: 2rem;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+    }
+
+    &__para {
+      color: $primary-color-black;
       padding: 1rem;
     }
   }
@@ -69,6 +94,7 @@
 
     img {
       background-image: url(/assets/shared/desktop/bg-pattern-small-circle.svg);
+      background-repeat: no-repeat;
     }
   }
 
@@ -79,38 +105,5 @@
   &__btn button {
     background: $primary-color-peach;
     color: $primary-color-white;
-  }
-}
-
-/** DEAL **/
-
-.deal {
-  width: 100%;
-  text-align: center;
-  //   padding: 1rem;
-
-  &__img img {
-    width: 100%;
-  }
-
-  &__details {
-    margin-top: -0.6rem;
-    padding: 2rem 1rem;
-    background: $secondary-color-lightPeach;
-    color: $primary-color-white;
-    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
-    background-repeat: no-repeat;
-  }
-  &__heading {
-    color: $primary-color-peach;
-    padding-top: 2rem;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 35px;
-  }
-
-  &__para {
-    color: $primary-color-black;
-    padding: 2rem 1rem;
   }
 }

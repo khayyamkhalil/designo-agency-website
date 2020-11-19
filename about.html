@@ -50,10 +50,25 @@
 
     <section class="about">
       <div class="about__main">
-        <div class="about__img">
+        <picture class="about__img">
+          <source
+            srcset="/assets/about/mobile/image-about-hero.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 375px) and (max-width: 567px)"
+          />
+          <source
+            srcset="/assets/about/tablet/image-about-hero.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 568px) and (max-width: 768px)"
+          />
+          <source
+            srcset="/assets/about/desktop/image-about-hero.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 769px) and (max-width: 1244px)"
+          />
           <img src="/assets/about/mobile/image-about-hero.jpg" alt="" />
-        </div>
-        <div class="about__details">
+        </picture>
+        <div class="about__text">
           <h2 class="about__heading">About Us</h2>
           <p class="about__para">
             Founded in 2010, we are a creative agency that produces lasting
@@ -66,11 +81,25 @@
       </div>
 
       <div class="about__talent">
-        <div class="about__talent__img">
+        <picture class="about__talent__img">
+          <source
+            srcset="/assets/about/mobile/image-world-class-talent.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 375px) and (max-width: 567px)"
+          />
+          <source
+            srcset="/assets/about/tablet/image-world-class-talent.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 568px) and (max-width: 768px)"
+          />
+          <source srcset="/assets/about/desktop/image-world-class-talent.jpg
+          type="image/jpg" media=" all and (min-width: 769px) and (max-width:
+          1244px)" />
           <img src="/assets/about/mobile/image-world-class-talent.jpg" alt="" />
-        </div>
+        </picture>
+
         <div class="about__talent__text">
-          <h2 class="about__talent__title">World-class talent</h2>
+          <h2 class="about__talent__heading">World-class talent</h2>
           <p class="about__talent__para">
             We are a crew of strategists, problem-solvers, and technologists.
             Every design is thoughtfully crafted from concept to launch,
@@ -116,21 +145,37 @@
         </div>
       </div>
 
-      <div class="deal">
-        <div class="deal__img">
+      <div class="about__deal">
+        <picture class="about__deal__img">
+          <source
+            srcset="/assets/about/mobile/image-real-deal.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 375px) and (max-width: 567px)"
+          />
+          <source
+            srcset="/assets/about/tablet/image-real-deal.jpg"
+            type="image/jpg"
+            media=" all and (min-width: 568px) and (max-width: 768px)"
+          />
+          <source srcset="/assets/about/desktop/image-real-deal.jpg
+          type="image/jpg" media=" all and (min-width: 769px) and (max-width:
+          1244px)" />
+
           <img src="/assets/about/mobile/image-real-deal.jpg" alt="" />
-        </div>
-        <div class="deal__details">
-          <h2 class="deal__heading">The real deal</h2>
-          <p class="deal__para">
+        </picture>
+        <div class="about__deal__text">
+          <h2 class="about__deal__heading">The real deal</h2>
+          <p class="about__deal__para">
             As strategic partners in our clients’ businesses, we are ready to
             take on any challenge as our own. Solving real problems require
             empathy and collaboration, and we strive to bring a fresh
             perspective to every opportunity. We make design and technology more
-            accessible and give you tools to measure success. We are visual
-            storytellers in appealing and captivating ways. By combining
-            business and marketing strategies, we inspire audiences to take
-            action and drive real results.
+            accessible and give you tools to measure success.
+          </p>
+          <p class="about__deal__para">
+            We are visual storytellers in appealing and captivating ways. By
+            combining business and marketing strategies, we inspire audiences to
+            take action and drive real results.
           </p>
         </div>
       </div>
