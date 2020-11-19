@@ -375,8 +375,29 @@
       }
     }
   }
+
+  //** LOCATION **//
   .location {
     display: flex;
     justify-content: space-between;
+  }
+
+  /***************** CONTACT *****************/
+
+  .contact {
+    &__main {
+      display: flex;
+    }
+    &__details {
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+    }
+    &__form {
+      margin-left: auto;
+      width: 50%;
+    }
   }
 }
