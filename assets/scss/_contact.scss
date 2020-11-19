@@ -1,14 +1,15 @@
 .contact {
-  width: 100%;
   text-align: center;
 
-  &__details {
-    padding: 2rem 1rem;
+  &__main {
     background: $primary-color-peach;
     color: $primary-color-white;
-    background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+    padding: 2rem 1rem;
+    background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+    background-size: cover;
     background-repeat: no-repeat;
   }
+
   &__heading {
     padding-top: 2rem;
     font-size: 30px;
@@ -23,6 +24,7 @@
   &__form {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 
     input,
     textarea {

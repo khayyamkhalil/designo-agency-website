@@ -172,4 +172,30 @@
       margin-top: 1rem;
     }
   }
+
+  /***************** CONTACT *****************/
+
+  .contact {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &__main {
+      background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+      background-size: 80%;
+      border-radius: 1rem;
+      padding: 2rem;
+    }
+
+    &__details {
+      text-align: left;
+    }
+    &__heading {
+      margin-left: 1rem;
+    }
+    &__btn {
+      text-align: right;
+    }
+  }
 }

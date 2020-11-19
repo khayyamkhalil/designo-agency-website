@@ -439,15 +439,15 @@
 }
 
 .contact {
-  width: 100%;
   text-align: center;
 }
 
-.contact__details {
-  padding: 2rem 1rem;
+.contact__main {
   background: #e88069;
   color: white;
-  background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  padding: 2rem 1rem;
+  background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -470,6 +470,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1rem;
 }
 
 .contact__form input,
@@ -683,6 +684,30 @@
   }
   .locations__details {
     margin-top: 1rem;
+  }
+  /***************** CONTACT *****************/
+  .contact {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact__main {
+    background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+    background-size: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .contact__details {
+    text-align: left;
+  }
+  .contact__heading {
+    margin-left: 1rem;
+  }
+  .contact__btn {
+    text-align: right;
   }
 }
 
