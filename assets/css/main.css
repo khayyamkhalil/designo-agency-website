@@ -248,7 +248,7 @@
 .design__details {
   margin-top: -0.6rem;
   padding: 2rem 1rem;
-  background: #ffac99;
+  background: #ffeae6;
   border-radius: 0 0 1rem 1rem;
 }
 
@@ -327,7 +327,7 @@
 .about__talent {
   margin-top: -0.6rem;
   padding: 2rem 1rem;
-  background: #ffac99;
+  background: #ffeae6;
   background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
   background-repeat: no-repeat;
 }
@@ -379,7 +379,7 @@
 .deal__details {
   margin-top: -0.6rem;
   padding: 2rem 1rem;
-  background: #ffac99;
+  background: #ffeae6;
   color: white;
   background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@
   margin-top: -0.6rem;
   padding: 2rem 1rem;
   padding-bottom: 4rem;
-  background: #ffac99;
+  background: #ffeae6;
   color: white;
   background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
   background-repeat: no-repeat;
@@ -502,6 +502,7 @@
 }
 
 @media screen and (min-width: 568px) {
+  /***************** HOME *****************/
   .home {
     height: 85vh;
     overflow: hidden;
@@ -509,9 +510,11 @@
   .home__text {
     padding: 1rem 10rem;
   }
+  /** PROJECTS **/
   .projects__item img {
     max-height: 12rem;
   }
+  /** RESOURCES **/
   .resources {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -531,6 +534,7 @@
   .resources__item img {
     margin: 0 auto;
   }
+  /** RESOURCES **/
   .footer__middle__items {
     padding: 0 10rem;
   }
@@ -600,6 +604,38 @@
     display: flex;
     -ms-flex-item-align: center;
         align-self: center;
+  }
+  /***************** PROJECTS *****************/
+  .design {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .design__item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+  }
+  .design__item img {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .design__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0 1rem 1rem 0;
+    margin-top: 0;
+  }
+  .design__title {
+    padding-bottom: 1rem;
   }
 }
 
