@@ -403,9 +403,7 @@
 }
 
 .locations {
-  width: 100%;
   text-align: center;
-  padding: 0;
 }
 
 .locations img {
@@ -670,6 +668,21 @@
   }
   .about__talent__text, .about__deal__text {
     border-radius: 0 0 1rem 1rem;
+  }
+  /***************** LOCATIONS *****************/
+  .locations {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .locations__main {
+    margin-bottom: 2rem;
+  }
+  .locations__details {
+    margin-top: 1rem;
   }
 }
 

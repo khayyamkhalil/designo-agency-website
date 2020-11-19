@@ -121,7 +121,6 @@
 
   /***************** ABOUT *****************/
 
-  // WORK ON THIS!!!!!
   .about {
     display: grid;
     grid-template-columns: 1fr;
@@ -154,6 +153,23 @@
       &__text {
         border-radius: 0 0 1rem 1rem;
       }
+    }
+  }
+
+  /***************** LOCATIONS *****************/
+
+  .locations {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &__main {
+      margin-bottom: 2rem; //FIXME: Need to change it so the bottom doesnt mess up.
+    }
+
+    &__details {
+      margin-top: 1rem;
     }
   }
 }
