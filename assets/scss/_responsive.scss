@@ -1,3 +1,5 @@
+/***************** MEDIA TABLET *****************/
+
 @include media-tablet {
   /***************** HOME *****************/
 
@@ -35,7 +37,7 @@
     }
   }
 
-  /** RESOURCES **/
+  /** FOOTER **/
   .footer {
     &__middle {
       &__items {
@@ -196,6 +198,108 @@
     }
     &__btn {
       text-align: right;
+    }
+  }
+}
+
+/***************** MEDIA DESKTOP *****************/
+
+@include media-desktop {
+  /***************** HOME *****************/
+  body {
+    max-width: 1111px;
+    margin: 0 auto;
+  }
+
+  .home {
+    background-position: right;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &__text {
+      padding: 0 3rem;
+      text-align: left;
+    }
+    &__heading {
+      padding-top: 0;
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__hero {
+      align-self: flex-start;
+      margin-top: 6rem;
+      margin-right: -6rem;
+    }
+  }
+
+  /** PROJECTS **/
+  .projects {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+    .item1 {
+      grid-row: 1/3;
+      grid-column: 1;
+
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+
+  /** RESOURCES **/
+  .resources {
+    &items {
+      // grid-template-columns: repeat(3, 1fr);
+      // grid-template-areas: "itema itemb itemc";
+    }
+
+    &__item {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-content: center;
+
+      .itema {
+        grid-area: itema;
+      }
+
+      .itemb {
+        grid-area: itemb;
+      }
+
+      .itemc {
+        grid-area: itemc;
+      }
+    }
+  }
+  /***************** PROJECTS *****************/
+  .design {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+    &__details {
+      border-radius: 0 0 1rem 1rem;
     }
   }
 }

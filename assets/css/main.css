@@ -504,6 +504,7 @@
   opacity: 0.6;
 }
 
+/***************** MEDIA TABLET *****************/
 @media screen and (min-width: 568px) {
   /***************** HOME *****************/
   .home {
@@ -537,7 +538,7 @@
   .resources__item img {
     margin: 0 auto;
   }
-  /** RESOURCES **/
+  /** FOOTER **/
   .footer__middle__items {
     padding: 0 10rem;
   }
@@ -708,6 +709,99 @@
   }
   .contact__btn {
     text-align: right;
+  }
+}
+
+/***************** MEDIA DESKTOP *****************/
+@media screen and (min-width: 769px) {
+  /***************** HOME *****************/
+  body {
+    max-width: 1111px;
+    margin: 0 auto;
+  }
+  .home {
+    background-position: right;
+    height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  .home__text {
+    padding: 0 3rem;
+    text-align: left;
+  }
+  .home__heading {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .home__hero {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 6rem;
+    margin-right: -6rem;
+  }
+  /** PROJECTS **/
+  .projects {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .projects__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .projects .item1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .projects .item1 img {
+    max-height: 100%;
+  }
+  /** RESOURCES **/
+  .resources__item .itema {
+    grid-area: itema;
+  }
+  .resources__item .itemb {
+    grid-area: itemb;
+  }
+  .resources__item .itemc {
+    grid-area: itemc;
+  }
+  /***************** PROJECTS *****************/
+  .design__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .design__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design__item img {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .design__details {
+    border-radius: 0 0 1rem 1rem;
   }
 }
 
