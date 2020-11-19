@@ -118,4 +118,34 @@
       padding-bottom: 1rem;
     }
   }
+
+  /***************** ABOUT *****************/
+
+  // WORK ON THIS!!!!!
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    &__main {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-radius: 1rem;
+
+      img {
+      }
+    }
+    &__talent {
+      margin-left: 2rem;
+      margin-right: 2rem;
+
+      &__img {
+        max-width: 100%;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

@@ -325,11 +325,22 @@
 }
 
 .about__talent {
-  margin-top: -0.6rem;
-  padding: 2rem 1rem;
-  background: #ffeae6;
+  width: 100%;
+}
+
+.about__talent__img {
+  margin-bottom: -0.5rem;
+}
+
+.about__talent__img img {
+  width: 100%;
+}
+
+.about__talent__text {
   background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background: #ffeae6;
   background-repeat: no-repeat;
+  padding: 2rem 1rem;
 }
 
 .about__talent__title {
@@ -636,6 +647,30 @@
   }
   .design__title {
     padding-bottom: 1rem;
+  }
+  /***************** ABOUT *****************/
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
+  .about__talent {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .about__talent__img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .about__talent__img img {
+    width: 100%;
   }
 }
 
