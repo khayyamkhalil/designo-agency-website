@@ -163,8 +163,8 @@
   .locations {
     margin-right: 2rem;
     margin-left: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr;
 
     &__main {
       margin-bottom: 2rem; //FIXME: Need to change it so the bottom doesnt mess up.
@@ -260,10 +260,10 @@
 
   /** RESOURCES **/
   .resources {
-    &items {
-      // grid-template-columns: repeat(3, 1fr);
-      // grid-template-areas: "itema itemb itemc";
-    }
+    // &items {
+    //   // grid-template-columns: repeat(3, 1fr);
+    //   // grid-template-areas: "itema itemb itemc";
+    // }
 
     &__item {
       // display: flex;
@@ -398,6 +398,61 @@
     &__form {
       margin-left: auto;
       width: 50%;
+    }
+  }
+
+  /***************** LOCATIONS *****************/
+
+  .locations {
+    &__main {
+      border: 2px solid blue;
+      gap: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "add-can add-can map-can"
+        "map-aus add-aus add-aus"
+        "add-uk add-uk map-uk";
+
+      .map-can {
+        grid-area: map-can;
+      }
+
+      .add-can {
+        grid-area: add-can;
+      }
+
+      .map-aus {
+        grid-area: map-aus;
+      }
+
+      .add-aus {
+        grid-area: add-aus;
+      }
+
+      .map-uk {
+        grid-area: map-uk;
+      }
+
+      .add-uk {
+        grid-area: add-uk;
+      }
+    }
+    &__details {
+      // border: 2px solid yellow;
+      height: 100%;
+      margin: 0;
+    }
+
+    &__heading {
+      text-align: left;
+      padding-left: 5rem;
+    }
+
+    &__address {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: left;
     }
   }
 }
