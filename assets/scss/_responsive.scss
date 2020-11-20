@@ -2,12 +2,33 @@
 
 @include media-tablet {
   /***************** HOME *****************/
-  .nav__links {
-    visibility: visible;
+
+  .menu-btn {
+    visibility: hidden;
   }
 
-  .nav__btn {
-    visibility: hidden;
+  .nav {
+    visibility: visible;
+
+    .menu-nav {
+      margin-top: 1rem;
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      justify-content: flex-start;
+      background: transparent;
+      text-align: right;
+
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+
+      &__link {
+        color: black;
+        font-size: 1rem;
+      }
+    }
   }
 
   .home {
@@ -212,13 +233,13 @@
 /***************** MEDIA DESKTOP *****************/
 
 @include media-desktop {
-  .nav__links {
-    visibility: visible;
-  }
+  // .nav__links {
+  //   visibility: visible;
+  // }
 
-  .nav__btn {
-    visibility: hidden;
-  }
+  // .nav__btn {
+  //   visibility: hidden;
+  // }
 
   /***************** HOME *****************/
   .wraper {
