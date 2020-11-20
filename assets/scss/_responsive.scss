@@ -2,6 +2,13 @@
 
 @include media-tablet {
   /***************** HOME *****************/
+  .nav__links {
+    visibility: visible;
+  }
+
+  .nav__btn {
+    visibility: hidden;
+  }
 
   .home {
     height: 85vh;
@@ -205,8 +212,16 @@
 /***************** MEDIA DESKTOP *****************/
 
 @include media-desktop {
+  .nav__links {
+    visibility: visible;
+  }
+
+  .nav__btn {
+    visibility: hidden;
+  }
+
   /***************** HOME *****************/
-  body {
+  .wraper {
     max-width: 1111px;
     margin: 0 auto;
   }
@@ -405,10 +420,12 @@
 
   .locations {
     &__main {
-      border: 2px solid blue;
+      margin-bottom: -3rem;
+      padding: 0;
       gap: 1.5rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
       grid-template-areas:
         "add-can add-can map-can"
         "map-aus add-aus add-aus"
@@ -438,21 +455,34 @@
         grid-area: add-uk;
       }
     }
+
+    &__img img {
+      height: 100%;
+      border-radius: 1rem;
+    }
+
     &__details {
-      // border: 2px solid yellow;
+      border-radius: 1rem;
       height: 100%;
       margin: 0;
     }
 
     &__heading {
       text-align: left;
-      padding-left: 5rem;
+      padding-left: 7rem;
     }
 
     &__address {
       display: flex;
       justify-content: space-evenly;
       text-align: left;
+    }
+  }
+
+  .footer {
+    &__bottom {
+      margin: 0;
+      max-width: 100%;
     }
   }
 }
