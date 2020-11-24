@@ -1,7 +1,5 @@
 .projects {
   margin-top: 6rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
   background: $primary-color-white;
   padding: 1rem;
 
@@ -9,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -17,6 +15,7 @@
 
     img {
       width: 100%;
+      height: 100%;
       border-radius: 1rem;
     }
 
@@ -28,6 +27,11 @@
 
       span img {
         width: 0.5rem;
+      }
+
+      &:hover {
+        color: $primary-color-peach;
+        @include transition-ease;
       }
     }
   }
@@ -46,7 +50,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: $secondary-color-darkGrey;
+      background: $primary-color-black;
       opacity: 0.7;
       border-radius: 1rem;
     }
@@ -54,7 +58,7 @@
   &__details {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
   }
 
   &__title {
@@ -68,13 +72,16 @@
 /** PROJECT DESIGN DETAILS **/
 
 .design__main {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 20rem;
   color: $primary-color-white;
   text-align: center;
-  padding: 1rem;
   background: $primary-color-peach;
   background-image: url(/assets/web-design/desktop/bg-pattern-intro-web.svg);
   background-repeat: no-repeat;
+  background-position: top;
 
   &__heading {
     padding-top: 3rem;
@@ -97,7 +104,7 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     height: 100%;
     width: 100%;
     text-align: center;
@@ -107,10 +114,6 @@
       width: 100%;
       border-radius: 1rem 1rem 0 0;
     }
-  }
-  &__item {
-    margin: 0;
-    padding: 0;
   }
 
   &__details {
@@ -122,6 +125,7 @@
 
   &__title {
     color: $primary-color-peach;
-    font-weight: 700;
+    font-weight: 500;
+    padding-bottom: 1rem;
   }
 }

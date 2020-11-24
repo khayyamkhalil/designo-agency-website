@@ -16,12 +16,13 @@
   &__details {
     width: 100%;
     margin-top: -0.6rem;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     padding-bottom: 4rem;
     background: $secondary-color-lightPeach;
     color: $primary-color-white;
     background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
     background-repeat: no-repeat;
+    // background-position: top;
     margin-bottom: 2rem;
   }
 
@@ -31,5 +32,9 @@
     font-weight: 500;
     line-height: 35px;
     color: $primary-color-peach;
+  }
+
+  &__add {
+    padding-bottom: 1rem;
   }
 }

@@ -10,6 +10,14 @@
     background-repeat: no-repeat;
   }
 
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
   &__heading {
     padding-top: 2rem;
     font-size: 30px;
@@ -18,7 +26,7 @@
   }
 
   &__para {
-    padding: 2rem 1rem;
+    padding: 2rem 0;
   }
 
   &__form {
@@ -38,8 +46,16 @@
     }
 
     ::placeholder {
+      font-family: "Jost", Tahoma, Geneva, Verdana, sans-serif;
       color: $primary-color-white;
       opacity: 0.6;
+    }
+
+    .contact__btn {
+      padding: 2rem;
+      button {
+        padding: 1rem 2rem;
+      }
     }
   }
 }

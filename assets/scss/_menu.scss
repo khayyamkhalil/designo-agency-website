@@ -1,134 +1,132 @@
-.logo {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
-  margin-left: 1rem;
-  width: 50%;
-  img {
-    width: 200px;
+
+  &__logo {
+    padding-left: 1rem;
+
+    img {
+      width: 200px;
+    }
   }
-}
 
-.menu-btn {
-  position: absolute;
-  z-index: 1;
-  right: 2rem;
-  top: 2rem;
-  height: 20px;
-  width: 28px;
-  cursor: pointer;
-  @include transition-ease;
-
-  &__burger {
-    position: absolute;
-    right: 0;
-    top: 0.5rem;
+  .nav-toggle {
+    // position: fixed;
+    z-index: 1;
+    top: 1rem;
+    right: 2rem;
+    height: 20px;
     width: 28px;
-    height: 3px;
-    // background: set-text-color($primary-color-black);
-    background: $primary-color-black;
+    cursor: pointer;
     @include transition-ease;
 
-    &::before {
-      content: "";
+    &__burger {
       position: absolute;
-      top: -8px;
+      right: 2rem;
+      top: 2.5rem;
       width: 28px;
       height: 3px;
-      // background: set-text-color($primary-color-black);
       background: $primary-color-black;
       @include transition-ease;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 8px;
-      width: 20px;
-      height: 3px;
-      // background: set-text-color($primary-color-black);
-      background: $primary-color-black;
-      @include transition-ease;
-    }
-
-    &.open {
-      transform: rotate(720deg);
-      background: transparent;
 
       &::before {
-        transform: rotate(45deg) translate(5px, 8px);
+        content: "";
+        position: absolute;
+        top: -8px;
+        width: 28px;
+        height: 3px;
+        background: $primary-color-black;
+        @include transition-ease;
       }
 
       &::after {
-        width: 28px;
-        transform: rotate(-45deg) translate(3px, -7px);
+        content: "";
+        position: absolute;
+        top: 8px;
+        width: 20px;
+        height: 3px;
+        background: $primary-color-black;
+        @include transition-ease;
+      }
+
+      &.open {
+        transform: rotate(720deg);
+        background: transparent;
+
+        &::before {
+          transform: rotate(45deg) translate(5px, 8px);
+        }
+
+        &::after {
+          width: 28px;
+          transform: rotate(-45deg) translate(3px, -7px);
+        }
       }
     }
   }
-}
 
-.nav {
-  // border: 2px solid red;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  opacity: 0.98;
-  visibility: hidden;
+  .nav__menu {
+    position: fixed;
+    visibility: hidden;
+    width: 100%;
 
-  &.open {
-    visibility: visible;
+    &.open {
+      visibility: visible;
+    }
   }
 
-  .menu-nav {
+  &__list {
     display: flex;
-    flex-flow: column wrap;
-    align-items: left;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
     height: 30vh;
+    position: fixed;
     overflow: hidden;
-    background: $primary-color-black;
-    list-style-type: none;
-    padding-left: 2rem;
-    margin-top: 5.1rem;
+    left: 0rem;
+    top: 5.2rem;
+    width: 100%;
+    background-color: $primary-color-black;
+    opacity: 0.98;
+    padding: 2rem 0;
     transform: translateX(100%);
     @include transition-ease;
 
     &.open {
-      transform: translateY(0);
+      transform: translate(0);
+    }
+  }
+
+  &__item {
+    transform: translateX(100vw);
+    @include transition-ease;
+
+    &.open {
+      transform: translateX(0);
     }
 
-    &__item {
-      transform: translateX(100vw);
-      @include transition-ease;
-
-      &.open {
-        transform: translateX(0);
-      }
-
-      &.active > a {
-        color: $primary-color-peach;
-      }
+    &.active > a {
+      color: $primary-color-peach;
     }
+  }
 
-    &__link {
-      display: inline-block;
-      font-size: 1.5rem;
+  &__link {
+    padding: 2rem;
+    text-transform: uppercase;
+    font-size: $medium-font;
+    color: $primary-color-white;
+    @include transition-ease;
 
-      color: $primary-color-white;
-      text-transform: uppercase;
-      padding: 1rem 0;
-      text-decoration: none;
-      font-weight: 300;
-      @include transition-ease;
-
-      &:hover {
-        color: $primary-color-peach;
-      }
+    &:hover {
+      color: $primary-color-peach;
     }
   }
 }
 
 @for $i from 1 through 4 {
-  .menu-nav__item:nth-child(#{$i}) {
+  .nav__item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + 0.15s;
   }
 }

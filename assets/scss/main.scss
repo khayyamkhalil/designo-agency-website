@@ -9,7 +9,7 @@
 @import "./responsive";
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: "Jost", Tahoma, Geneva, Verdana, sans-serif;
   font-size: $small-font;
@@ -58,7 +58,8 @@ ul li {
 }
 
 .btn {
-  padding-top: 20px;
+  // border: 2px solid blue;
+  padding: 20px;
 
   button {
     text-transform: uppercase;
@@ -69,6 +70,12 @@ ul li {
     border-radius: 0.4rem;
     border: none;
     cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      background-color: $secondary-color-lightPeach;
+      color: $primary-color-white;
+    }
   }
 }
 
@@ -79,23 +86,23 @@ ul li {
 
   &__middle {
     position: absolute;
-    top: -15rem;
+    top: -13rem;
     left: 1rem;
     right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1rem;
     background: $primary-color-peach;
     background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+    background-repeat: no-repeat;
+    background-position: center;
     color: $primary-color-white;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     border-radius: 1rem;
     text-align: center;
     max-width: 100%;
 
     &__title {
-      font-size: $large-font;
-      font-weight: 500;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 32px;
       padding: 0.4rem;
       padding-bottom: 1rem;
     }
@@ -107,14 +114,28 @@ ul li {
     background: $primary-color-black;
     color: $secondary-color-darkGrey;
 
-    &__logo {
-      // max-width: 50%;
-      // margin: 0 auto;
+    &__nav {
+      position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-top: 13rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 16rem;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $secondary-color-darkGrey;
+      }
 
       img {
-        margin-top: 15rem; // need to change to overlap
         width: 200px;
       }
     }
@@ -122,35 +143,58 @@ ul li {
     &__items {
       text-align: center;
       color: $secondary-color-darkGrey;
-      padding: 2rem;
+      padding: 0 1rem;
     }
 
-    &__links ul li {
-      padding: 0.8rem 0;
-      list-style: none;
-      font-size: $small-font;
-      text-transform: uppercase;
+    &__links {
+      padding-top: 1rem;
+      letter-spacing: 3px;
 
-      a {
-        color: $secondary-color-lightGrey;
-        font-weight: 400;
-        font-size: 14px;
+      ul li {
+        padding: 0.8rem 0;
+        list-style: none;
+        font-size: $small-font;
+        text-transform: uppercase;
+
+        a {
+          color: $secondary-color-lightGrey;
+          font-weight: 400;
+          font-size: 14px;
+
+          &:hover {
+            color: $primary-color-peach;
+            @include transition-ease;
+          }
+        }
       }
     }
+
     &__address {
-      padding: 2rem;
+      padding: 1rem;
       font-size: 14px;
+
+      h4 {
+        font-size: 16px;
+      }
     }
 
     &__contact {
-      padding: 2rem;
+      padding: 1rem;
       font-size: 14px;
+
+      h4 {
+        font-size: 16px;
+      }
     }
 
-    &__social a {
-      padding: 0.8rem;
-      color: $primary-color-peach;
-      font-size: 14px;
+    &__social {
+      padding: 1rem;
+
+      a {
+        padding: 0.8rem;
+        color: $primary-color-peach;
+        font-size: 14px;
+      }
     }
   }
 }

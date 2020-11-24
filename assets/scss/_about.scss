@@ -1,13 +1,18 @@
 .about {
-  width: 100%;
+  // width: 100%;
   text-align: center;
 
   &__img img {
     width: 100%;
   }
+
   &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: -0.6rem;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     background: $primary-color-peach;
     color: $primary-color-white;
     background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
@@ -32,11 +37,17 @@
     }
 
     &__text {
-      background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background: $secondary-color-lightPeach;
       background-repeat: no-repeat;
-      padding: 2rem 1rem;
+      padding: 2rem 0;
       margin-top: -0.5rem;
+      background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     &__heading {
@@ -62,8 +73,12 @@
     }
 
     &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-top: -0.6rem;
-      padding: 2rem 1rem;
+      padding: 2rem 0;
       background: $secondary-color-lightPeach;
       color: $primary-color-white;
       background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
