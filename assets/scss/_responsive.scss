@@ -116,7 +116,7 @@
       }
 
       &__links {
-        width: 60%;
+        width: 55%;
         ul {
           display: flex;
           justify-content: space-between;
@@ -124,19 +124,23 @@
       }
 
       &__address {
+        margin: 3rem 0;
         grid-area: address;
         text-align: left;
       }
 
       &__contact {
+        margin-top: 3rem;
         grid-area: contact;
         text-align: left;
       }
 
       &__social {
+        margin-bottom: 1rem;
         grid-area: social;
         display: flex;
-        align-self: center;
+        justify-content: flex-end;
+        align-self: flex-end;
       }
     }
   }
