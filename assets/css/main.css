@@ -6,6 +6,22 @@
   padding: 0;
 }
 
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,7 +657,7 @@
 }
 
 .contact__para {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .contact__form {
@@ -780,7 +796,7 @@
     margin-right: 1rem;
   }
   .footer__middle__text {
-    padding: 0 8rem;
+    margin: 0 8rem;
   }
   .footer__middle__text h2 {
     font-size: 40px;
@@ -914,9 +930,15 @@
   .about__text {
     border-radius: 0 0 1rem 1rem;
   }
+  .about__text h2 {
+    font-size: 48px;
+    font-weight: 400;
+  }
+  .about__text p {
+    margin: 0 2rem;
+  }
   .about__main {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem 4rem 2rem;
   }
   .about__talent, .about__deal {
     margin-left: 2rem;
@@ -929,25 +951,46 @@
   .about__talent__text, .about__deal__text {
     border-radius: 0 0 1rem 1rem;
   }
+  .about__talent__text h2, .about__deal__text h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .about__talent__text p, .about__deal__text p {
+    margin: 0 2rem;
+  }
   /***************** LOCATIONS *****************/
   .locations {
     margin-right: 2rem;
     margin-left: 2rem;
   }
-  .locations__main {
-    margin-bottom: 2rem;
+  .locations__img img {
+    border-radius: 1rem;
   }
   .locations__details {
+    border-radius: 1rem;
     margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    padding: 4rem;
+  }
+  .locations__details h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .locations__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
   }
   /***************** CONTACT *****************/
   .contact {
     margin-right: 2rem;
     margin-left: 2rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
   .contact__main {
     background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
@@ -956,10 +999,16 @@
     padding: 2rem;
   }
   .contact__details {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: left;
   }
   .contact__heading {
     margin-left: 1rem;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: left;
   }
   .contact__btn {
     text-align: right;

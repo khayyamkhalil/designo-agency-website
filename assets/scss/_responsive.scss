@@ -84,7 +84,7 @@
       margin-left: 1rem;
       margin-right: 1rem;
       &__text {
-        padding: 0 8rem;
+        margin: 0 8rem;
 
         h2 {
           font-size: $large-font;
@@ -202,11 +202,19 @@
 
     &__text {
       border-radius: 0 0 1rem 1rem;
+
+      h2 {
+        font-size: $xl-font;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 0 2rem;
+      }
     }
 
     &__main {
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin: 0 2rem 4rem 2rem;
     }
 
     &__talent,
@@ -221,6 +229,16 @@
 
       &__text {
         border-radius: 0 0 1rem 1rem;
+
+        h2 {
+          font-size: $xl-font;
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin: 0 2rem;
+        }
       }
     }
   }
@@ -230,15 +248,28 @@
   .locations {
     margin-right: 2rem;
     margin-left: 2rem;
-    // display: grid;
-    // grid-template-columns: 1fr;
 
-    &__main {
-      margin-bottom: 2rem; //FIXME: Need to change it so the bottom doesnt mess up.
+    &__img img {
+      border-radius: 1rem;
     }
 
     &__details {
+      border-radius: 1rem;
       margin-top: 1rem;
+      margin-bottom: 5rem;
+      text-align: left;
+      padding: 4rem;
+
+      h2 {
+        font-size: $large-font;
+        font-weight: 400;
+      }
+    }
+
+    &__address {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
     }
   }
 
@@ -247,8 +278,6 @@
   .contact {
     margin-right: 2rem;
     margin-left: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
 
     &__main {
       background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
@@ -258,11 +287,17 @@
     }
 
     &__details {
+      align-items: flex-start;
       text-align: left;
     }
+
     &__heading {
       margin-left: 1rem;
+      font-size: $xl-font;
+      font-weight: 400;
+      text-align: left;
     }
+
     &__btn {
       text-align: right;
     }
