@@ -215,6 +215,7 @@ select:-webkit-autofill:focus {
           align-items: center;
   text-align: center;
   padding: 1rem;
+  margin-bottom: -7rem;
 }
 
 .home__heading {
@@ -1405,6 +1406,7 @@ ul li {
 }
 
 .btn {
+  z-index: 1;
   margin: 1rem 0;
 }
 
@@ -1415,6 +1417,7 @@ ul li {
   letter-spacing: 2px;
   padding: 18px 20px;
   border-radius: 0.4rem;
+  background: white;
   border: none;
   outline: none;
   cursor: pointer;
