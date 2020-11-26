@@ -169,7 +169,6 @@
     &__item {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      margin-bottom: 1rem;
 
       img {
         border-radius: 1rem 0 0 1rem;
@@ -351,7 +350,8 @@
     &__items {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: auto;
+      // grid-template-rows: repeat(2, 1fr);
       grid-template-areas:
         "item1 item2"
         "item1 item3";
@@ -361,13 +361,13 @@
       grid-area: item1;
     }
 
-    .item2 {
-      grid-area: item2;
-    }
+    // .item2 {
+    //   grid-area: item2;
+    // }
 
-    .item3 {
-      grid-area: item3;
-    }
+    // .item3 {
+    //   grid-area: item3;
+    // }
   }
 
   /** RESOURCES **/
@@ -384,9 +384,19 @@
     }
   }
   /***************** PROJECTS *****************/
+
+  .design__main {
+    p {
+      align-self: center;
+      width: 50%;
+    }
+  }
+
   .design {
     &__items {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
     }
 
     &__item {
@@ -397,7 +407,9 @@
         border-radius: 1rem 1rem 0 0;
       }
     }
+
     &__details {
+      margin-top: -0.5rem;
       border-radius: 0 0 1rem 1rem;
     }
   }
@@ -565,6 +577,8 @@
 
   .footer {
     &__middle__items {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -582,6 +596,10 @@
 
     .footer__middle__btn {
       padding-right: 3rem;
+    }
+
+    &__bottom__nav {
+      height: 100%;
     }
 
     &__bottom__items {
