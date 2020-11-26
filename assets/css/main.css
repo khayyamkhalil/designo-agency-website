@@ -1236,6 +1236,14 @@ select:-webkit-autofill:focus {
     margin-left: auto;
     width: 50%;
   }
+  .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   /***************** LOCATIONS *****************/
   .locations__main {
     margin-bottom: -3rem;

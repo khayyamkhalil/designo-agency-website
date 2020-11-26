@@ -513,6 +513,11 @@
     }
   }
 
+  .location {
+    display: flex;
+    justify-content: space-between;
+  }
+
   /***************** LOCATIONS *****************/
 
   .locations {
