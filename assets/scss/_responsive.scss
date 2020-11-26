@@ -360,14 +360,6 @@
     .item1 {
       grid-area: item1;
     }
-
-    // .item2 {
-    //   grid-area: item2;
-    // }
-
-    // .item3 {
-    //   grid-area: item3;
-    // }
   }
 
   /** RESOURCES **/
@@ -418,71 +410,86 @@
 
   .about {
     &__main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: row-reverse;
     }
-    &__img {
-      grid-column: 2/3;
-      img {
-        border-radius: 0 1rem 1rem 0;
-      }
+
+    &__img img {
+      height: 100%;
+      border-radius: 0 1rem 1rem 0;
     }
 
     &__text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      grid-column: 1/2;
-      grid-row: 1/2;
-      border-radius: 1rem 0 0 1rem;
+      padding: 0 3rem;
+      width: 60%;
       margin: 0;
-      margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+      border-radius: 1rem 0 0 1rem;
+      align-items: flex-start;
       text-align: left;
+
+      h2 {
+        margin-left: 3rem;
+      }
     }
 
     &__talent {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      &__img img {
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+      }
+      &__text {
+        padding: 0 3rem;
+        width: 60%;
+        margin: 0;
+        border-radius: 0 1rem 1rem 0;
+        align-items: flex-start;
+        text-align: left;
 
-      &__img {
-        grid-column: 1/2;
-        img {
-          border-radius: 1rem 0 0 1rem;
+        h2 {
+          margin-left: 3rem;
         }
       }
+    }
 
+    &__talent {
+      display: flex;
+      &__img img {
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+      }
       &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        grid-column: 2/3;
-        border-radius: 0 1rem 1rem 0;
+        padding: 0 3rem;
+        width: 60%;
         margin: 0;
-        margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+        border-radius: 0 1rem 1rem 0;
+        align-items: flex-start;
         text-align: left;
+
+        h2 {
+          margin-left: 3rem;
+        }
       }
     }
 
     &__deal {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      &__img {
-        grid-column: 2/3;
-        img {
-          border-radius: 0 1rem 1rem 0;
-        }
+      display: flex;
+      flex-direction: row-reverse;
+      &__img img {
+        height: 100%;
+        border-radius: 0 1rem 1rem 0;
       }
-
       &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        border-radius: 1rem 0 0 1rem;
+        padding: 0 3rem;
+        width: 60%;
         margin: 0;
-        margin-bottom: 0.4rem; //FIXME: Need to fix the margin so it works on all displays
+        border-radius: 1rem 0 0 1rem;
+        align-items: flex-start;
         text-align: left;
+
+        h2 {
+          margin-left: 3rem;
+        }
       }
     }
   }

@@ -1117,109 +1117,100 @@ select:-webkit-autofill:focus {
   }
   /***************** ABOUT *****************/
   .about__main {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .about__img {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .about__img img {
+    height: 100%;
     border-radius: 0 1rem 1rem 0;
   }
   .about__text {
+    padding: 0 3rem;
+    width: 60%;
+    margin: 0;
+    border-radius: 1rem 0 0 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .about__text h2 {
+    margin-left: 3rem;
+  }
+  .about__talent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    border-radius: 1rem 0 0 1rem;
-    margin: 0;
-    margin-bottom: 0.4rem;
-    text-align: left;
-  }
-  .about__talent {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-  .about__talent__img {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
   }
   .about__talent__img img {
+    height: 100%;
     border-radius: 1rem 0 0 1rem;
   }
   .about__talent__text {
+    padding: 0 3rem;
+    width: 60%;
+    margin: 0;
+    border-radius: 0 1rem 1rem 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .about__talent__text h2 {
+    margin-left: 3rem;
+  }
+  .about__talent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    border-radius: 0 1rem 1rem 0;
+  }
+  .about__talent__img img {
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .about__talent__text {
+    padding: 0 3rem;
+    width: 60%;
     margin: 0;
-    margin-bottom: 0.4rem;
+    border-radius: 0 1rem 1rem 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: left;
   }
-  .about__deal {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+  .about__talent__text h2 {
+    margin-left: 3rem;
   }
-  .about__deal__img {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
+  .about__deal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .about__deal__img img {
+    height: 100%;
     border-radius: 0 1rem 1rem 0;
   }
   .about__deal__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    border-radius: 1rem 0 0 1rem;
+    padding: 0 3rem;
+    width: 60%;
     margin: 0;
-    margin-bottom: 0.4rem;
+    border-radius: 1rem 0 0 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: left;
+  }
+  .about__deal__text h2 {
+    margin-left: 3rem;
   }
   .location {
     display: -webkit-box;
