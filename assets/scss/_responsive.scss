@@ -4,7 +4,7 @@
   /***************** HOME *****************/
 
   .nav-toggle {
-    visibility: hidden;
+    display: none;
   }
 
   .nav {
@@ -16,6 +16,7 @@
       position: relative;
       display: block;
       transform: translateX(0);
+      transition: none;
       height: 100%;
       background: transparent;
       justify-content: space-between;

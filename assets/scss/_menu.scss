@@ -70,10 +70,12 @@
   .nav__menu {
     // position: fixed;
     visibility: hidden;
+    // display: none;
     width: 100%;
 
     &.open {
       visibility: visible;
+      // display: block;
     }
   }
 
@@ -107,9 +109,9 @@
       transform: translateX(0);
     }
 
-    &.active > a {
-      color: $primary-color-peach;
-    }
+    // &.active > a {
+    //   color: $primary-color-peach;
+    // }
   }
 
   &__link {
@@ -130,144 +132,3 @@
     transition-delay: ($i * 0.1s) + 0.15s;
   }
 }
-
-// header {
-//   position: fixed;
-//   z-index: 2;
-//   width: 100%;
-//   padding: 1rem;
-// }
-
-// .home {
-//   margin-top: 6rem;
-// }
-
-// .nav__logo {
-//   position: absolute;
-//   top: 1rem;
-//   left: 1rem;
-
-//   img {
-//     width: 200px;
-//   }
-// }
-// .nav-toggle {
-//   position: absolute;
-//   z-index: 1;
-//   top: 1;
-//   right: 1rem;
-//   height: 20px;
-//   width: 28px;
-//   cursor: pointer;
-//   @include transition-ease;
-
-//   &__burger {
-//     position: absolute;
-//     right: 0rem;
-//     top: 0.5rem;
-//     width: 28px;
-//     height: 3px;
-//     background: set-text-color($primary-color-black);
-//     @include transition-ease;
-
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       top: -8px;
-//       width: 28px;
-//       height: 3px;
-//       background: set-text-color($primary-color-black);
-//       @include transition-ease;
-//     }
-
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       top: 8px;
-//       width: 20px;
-//       height: 3px;
-//       background: set-text-color($primary-color-black);
-//       @include transition-ease;
-//     }
-
-//     &.open {
-//       transform: rotate(720deg);
-//       background: transparent;
-
-//       &::before {
-//         transform: rotate(45deg) translate(5px, 8px);
-//       }
-
-//       &::after {
-//         width: 28px;
-//         transform: rotate(-45deg) translate(3px, -7px);
-//       }
-//     }
-//   }
-// }
-
-// .nav {
-//   .nav__menu {
-//     border: 2px solid blue;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     opacity: 0.98;
-//     visibility: hidden;
-
-//     &.open {
-//       visibility: visible;
-//     }
-//   }
-
-//   &__list {
-//     display: flex;
-//     flex-flow: column wrap;
-//     justify-content: center;
-//     align-content: center;
-//     height: 100vh;
-//     overflow: hidden;
-//     background: $primary-color-black;
-//     list-style-type: none;
-//     padding-right: 2rem;
-//     transform: translateY(-100%);
-//     @include transition-ease;
-
-//     &.open {
-//       transform: translateY(0);
-//     }
-
-//     &__item {
-//       transform: translateX(100vw);
-//       @include transition-ease;
-
-//       &.open {
-//         transform: translateX(0);
-//       }
-
-//       &.active > a {
-//         color: $primary-color-peach;
-//       }
-//     }
-//   }
-
-//   &__link {
-//     display: inline-block;
-//     font-size: $medium-font;
-//     text-transform: uppercase;
-//     padding: 2rem 0;
-//     color: $primary-color-white;
-//     @include transition-ease;
-
-//     &:hover {
-//       color: $primary-color-peach;
-//     }
-//   }
-// }
-
-// @for $i from 1 through 4 {
-//   .nav__item:nth-child(#{$i}) {
-//     transition-delay: ($i * 0.1s) + 0.15s;
-//   }
-// }

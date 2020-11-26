@@ -159,10 +159,6 @@ select:-webkit-autofill:focus {
           transform: translateX(0);
 }
 
-.nav__item.active > a {
-  color: #e88069;
-}
-
 .nav__link {
   padding-left: 2rem;
   text-transform: uppercase;
@@ -711,7 +707,7 @@ select:-webkit-autofill:focus {
 @media screen and (min-width: 568px) {
   /***************** HOME *****************/
   .nav-toggle {
-    visibility: hidden;
+    display: none;
   }
   .nav .nav__menu {
     visibility: visible;
@@ -721,6 +717,8 @@ select:-webkit-autofill:focus {
     display: block;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    -webkit-transition: none;
+    transition: none;
     height: 100%;
     background: transparent;
     -webkit-box-pack: justify;
