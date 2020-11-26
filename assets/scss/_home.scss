@@ -9,11 +9,12 @@
   &__text {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    // padding-top: 1rem;
     color: $primary-color-white;
     align-items: center;
     text-align: center;
     padding: 1rem;
+    margin-bottom: -7rem;
   }
 
   &__heading {
@@ -27,7 +28,7 @@
   &__hero {
     display: flex;
     justify-content: center;
-    margin-top: -8rem;
+    // margin-top: -1rem;
     // border: 2px solid blue;
   }
 }

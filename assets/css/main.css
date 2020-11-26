@@ -209,13 +209,13 @@ select:-webkit-autofill:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1rem;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   padding: 1rem;
+  margin-bottom: -7rem;
 }
 
 .home__heading {
@@ -232,7 +232,6 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -8rem;
 }
 
 .projects {
@@ -1408,6 +1407,7 @@ ul li {
 
 .btn {
   z-index: 1;
+  margin: 1rem 0;
 }
 
 .btn button {
