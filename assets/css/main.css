@@ -44,11 +44,12 @@ select:-webkit-autofill:focus {
 }
 
 .nav .nav-toggle {
+  position: absolute;
   z-index: 1;
-  top: 1rem;
-  right: 2rem;
-  height: 20px;
-  width: 28px;
+  top: 2.2rem;
+  right: 1.5rem;
+  height: 22px;
+  width: 30px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -56,8 +57,8 @@ select:-webkit-autofill:focus {
 
 .nav .nav-toggle__burger {
   position: absolute;
-  right: 2rem;
-  top: 2.5rem;
+  right: 0rem;
+  top: 0.4rem;
   width: 28px;
   height: 3px;
   background: #1c1b1d;
@@ -105,7 +106,6 @@ select:-webkit-autofill:focus {
 }
 
 .nav .nav__menu {
-  position: fixed;
   visibility: hidden;
   width: 100%;
 }
@@ -114,7 +114,7 @@ select:-webkit-autofill:focus {
   visibility: visible;
 }
 
-.nav__list {
+.nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,7 +133,7 @@ select:-webkit-autofill:focus {
   left: 0rem;
   top: 5.2rem;
   width: 100%;
-  background-color: #1c1b1d;
+  background: #1c1b1d;
   opacity: 0.98;
   padding: 2rem 0;
   -webkit-transform: translateX(100%);
@@ -142,9 +142,9 @@ select:-webkit-autofill:focus {
   transition: all 0.5s ease-in-out;
 }
 
-.nav__list.open {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+.nav .nav__list.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .nav__item {
@@ -164,7 +164,7 @@ select:-webkit-autofill:focus {
 }
 
 .nav__link {
-  padding: 2rem;
+  padding-left: 2rem;
   text-transform: uppercase;
   font-size: 20px;
   color: white;
@@ -710,31 +710,39 @@ select:-webkit-autofill:focus {
 /***************** MEDIA TABLET *****************/
 @media screen and (min-width: 568px) {
   /***************** HOME *****************/
-  .nav .nav-toggle {
-    right: 4rem;
+  .nav-toggle {
+    visibility: hidden;
   }
-  .nav__menu {
+  .nav .nav__menu {
     visibility: visible;
   }
-  .nav__menu .nav__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .nav .nav__list {
+    position: relative;
+    display: block;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     height: 100%;
+    background: transparent;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    text-align: right;
   }
-  .nav__menu .nav__list__item {
-    background-color: #e88069;
+  .nav__item {
     display: inline;
-    border: 2px solid blue;
+  }
+  .nav__link {
+    padding: 0 1rem;
+    font-size: 12px;
+    color: #7e7986;
+    font-weight: 500;
   }
   .home {
     height: 83vh;
@@ -1012,6 +1020,9 @@ select:-webkit-autofill:focus {
   .wraper {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+  .nav__link {
+    padding: 0 1.5rem;
   }
   .home {
     background-position: right;

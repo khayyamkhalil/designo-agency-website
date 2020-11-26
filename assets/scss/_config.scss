@@ -37,6 +37,14 @@ select:-webkit-autofill:focus {
   transition: all 0.5s ease-in-out;
 }
 
+@function set-text-color($color) {
+  @if (lightness($color) > 40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 @mixin media-tablet {
   @media screen and (min-width: 568px) {
     @content;
