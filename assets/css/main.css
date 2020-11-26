@@ -1407,7 +1407,7 @@ ul li {
 }
 
 .btn {
-  padding: 20px;
+  z-index: 1;
 }
 
 .btn button {
@@ -1418,8 +1418,8 @@ ul li {
   padding: 18px 20px;
   border-radius: 0.4rem;
   border: none;
+  outline: none;
   cursor: pointer;
-  z-index: 1;
 }
 
 .btn button:hover {
