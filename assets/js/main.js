@@ -1,8 +1,8 @@
-const navToggle = document.querySelector(".nav-toggle"); //menu-btn
-const navBurger = document.querySelector(".nav-toggle__burger"); //menu-btn__burger
-const navMenu = document.querySelector(".nav__menu"); //nav
-const navList = document.querySelector(".nav__list"); //menu-nav
-const navItem = document.querySelectorAll(".nav__item"); //menu-nav__item
+const navToggle = document.querySelector(".nav-toggle");
+const navBurger = document.querySelector(".nav-toggle__burger");
+const navMenu = document.querySelector(".nav__menu");
+const navList = document.querySelector(".nav__list");
+const navItem = document.querySelectorAll(".nav__item");
 
 let showMenu = false;
 
