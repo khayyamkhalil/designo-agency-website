@@ -195,10 +195,11 @@ ul li {
 
     &__social {
       margin-top: 1rem;
-      margin-bottom: 2rem;
+      padding-bottom: 2rem;
 
       a {
-        margin: 0 0 1rem 1rem;
+        margin-left: 1rem;
+
         color: $primary-color-peach;
         font-size: 14px;
       }

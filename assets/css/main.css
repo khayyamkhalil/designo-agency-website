@@ -1549,11 +1549,11 @@ ul li {
 
 .footer__bottom__social {
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .footer__bottom__social a {
-  margin: 0 0 1rem 1rem;
+  margin-left: 1rem;
   color: #e88069;
   font-size: 14px;
 }
