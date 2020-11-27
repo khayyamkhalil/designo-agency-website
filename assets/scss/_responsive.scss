@@ -62,10 +62,6 @@
     margin-left: 1rem;
     margin-right: 1rem;
 
-    &__img {
-      height: 12rem;
-    }
-
     &__title {
       font-size: $large-font;
       font-weight: 400;
@@ -331,17 +327,18 @@
   }
 
   .home {
+    // border: 2px solid blue;
     background-position: right;
     height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 1rem;
 
     &__text {
-      padding: 0 3rem;
+      justify-content: center;
       align-items: flex-start;
       text-align: left;
+      padding: 0 0 0 4rem;
+      height: 100%;
     }
 
     &__heading {

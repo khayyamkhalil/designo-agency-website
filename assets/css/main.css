@@ -703,7 +703,7 @@ select:-webkit-autofill:focus {
 }
 
 /***************** MEDIA TABLET *****************/
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 768px) {
   /***************** HOME *****************/
   .nav-toggle {
     display: none;
@@ -759,9 +759,6 @@ select:-webkit-autofill:focus {
   .projects {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-  .projects__img {
-    height: 12rem;
   }
   .projects__title {
     font-size: 40px;
@@ -1013,7 +1010,7 @@ select:-webkit-autofill:focus {
 }
 
 /***************** MEDIA DESKTOP *****************/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
   .wraper {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -1027,20 +1024,18 @@ select:-webkit-autofill:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     border-radius: 1rem;
   }
   .home__text {
-    padding: 0 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     text-align: left;
+    padding: 0 0 0 4rem;
+    height: 100%;
   }
   .home__heading {
     font-size: 40px;
