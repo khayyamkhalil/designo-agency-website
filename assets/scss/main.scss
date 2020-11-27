@@ -74,8 +74,11 @@ ul li {
     cursor: pointer;
 
     &:hover {
-      background-color: $secondary-color-lightPeach;
+      background-color: $primary-color-peach;
+      border: 1px solid $primary-color-white;
+
       color: $primary-color-white;
+      transition: all 0.2s ease-in-out;
     }
   }
 }
