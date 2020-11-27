@@ -191,11 +191,11 @@ ul li {
     }
 
     &__social {
-      padding-top: 1rem;
-      padding-bottom: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
 
       a {
-        padding: 0 0 1rem 1rem;
+        margin: 0 0 1rem 1rem;
         color: $primary-color-peach;
         font-size: 14px;
       }
