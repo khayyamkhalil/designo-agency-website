@@ -117,8 +117,14 @@
     padding-top: 2rem;
   }
 
-  &__btn button {
+  .location__btn button {
+    margin-top: 1rem;
     background: $primary-color-peach;
     color: $primary-color-white;
+
+    &:hover {
+      background-color: $secondary-color-lightPeach;
+      border: none;
+    }
   }
 }

@@ -199,9 +199,12 @@ ul li {
 
       a {
         margin-left: 1rem;
-
         color: $primary-color-peach;
         font-size: 14px;
+
+        &:hover {
+          color: $secondary-color-lightPeach;
+        }
       }
     }
   }
