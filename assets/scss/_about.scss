@@ -117,14 +117,17 @@
     padding-top: 2rem;
   }
 
-  .location__btn button {
+  .location__btn {
     margin-top: 1rem;
     background: $primary-color-peach;
-    color: $primary-color-white;
+    border: 1px solid transparent;
+
+    a {
+      color: $primary-color-white;
+    }
 
     &:hover {
       background-color: $secondary-color-lightPeach;
-      border: none;
     }
   }
 }

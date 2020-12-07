@@ -306,8 +306,8 @@
       text-align: left;
     }
 
-    &__btn {
-      text-align: right;
+    .contact__btn {
+      align-self: flex-end;
     }
   }
 }
@@ -350,10 +350,6 @@
       align-self: flex-start;
       margin-top: -3rem;
       margin-right: -3rem;
-    }
-
-    .home__btn {
-      padding-left: 0;
     }
   }
 
@@ -617,7 +613,7 @@
     }
 
     .footer__middle__btn {
-      padding-right: 3rem;
+      margin-right: 3rem;
     }
 
     &__bottom__nav {

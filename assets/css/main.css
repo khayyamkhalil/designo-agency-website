@@ -561,15 +561,18 @@ select:-webkit-autofill:focus {
   padding-top: 2rem;
 }
 
-.location .location__btn button {
+.location .location__btn {
   margin-top: 1rem;
   background: #e88069;
+  border: 1px solid transparent;
+}
+
+.location .location__btn a {
   color: white;
 }
 
-.location .location__btn button:hover {
+.location .location__btn:hover {
   background-color: #ffd5cc;
-  border: none;
 }
 
 .locations {
@@ -701,11 +704,14 @@ select:-webkit-autofill:focus {
 }
 
 .contact__form .contact__btn {
-  padding: 2rem;
-}
-
-.contact__form .contact__btn button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 /***************** MEDIA TABLET *****************/
@@ -1010,8 +1016,9 @@ select:-webkit-autofill:focus {
     font-weight: 400;
     text-align: left;
   }
-  .contact__btn {
-    text-align: right;
+  .contact .contact__btn {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 
@@ -1052,9 +1059,6 @@ select:-webkit-autofill:focus {
         align-self: flex-start;
     margin-top: -3rem;
     margin-right: -3rem;
-  }
-  .home .home__btn {
-    padding-left: 0;
   }
   /** PROJECTS **/
   .projects__img {
@@ -1343,7 +1347,7 @@ select:-webkit-autofill:focus {
     padding-left: 3rem;
   }
   .footer .footer__middle__btn {
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
   .footer__bottom__nav {
     height: 100%;

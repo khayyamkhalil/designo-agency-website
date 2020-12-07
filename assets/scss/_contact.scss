@@ -51,11 +51,20 @@
       opacity: 0.6;
     }
 
+    // .contact__btn {
+    //   padding: 2rem;
+    //   button {
+    //     padding: 1rem 2rem;
+    //   }
+    // }
+
     .contact__btn {
-      padding: 2rem;
-      button {
-        padding: 1rem 2rem;
-      }
+      align-self: center;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 2px;
     }
   }
 }
