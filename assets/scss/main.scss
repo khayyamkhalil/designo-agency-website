@@ -49,6 +49,7 @@ main {
 
 a {
   text-decoration: none;
+  color: $primary-color-black;
 }
 
 ul li {
@@ -59,29 +60,59 @@ ul li {
 
 .btn {
   z-index: 1;
-  margin: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  background: $primary-color-white;
+  padding: 18px 20px;
+  outline: none;
+  cursor: pointer;
+  color: $primary-color-black;
 
-  button {
+  a {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 2px;
-    padding: 18px 20px;
-    border-radius: 0.4rem;
-    background: $primary-color-white;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  }
 
-    &:hover {
-      background-color: $primary-color-peach;
-      border: 1px solid $primary-color-white;
+  &:hover {
+    background-color: $primary-color-peach;
+    border: 1px solid $primary-color-white;
+    color: $primary-color-white;
+    transition: all 0.2s ease-in-out;
 
-      color: $primary-color-white;
-      transition: all 0.2s ease-in-out;
+    a {
+      color: white;
     }
   }
 }
+
+// .btn {
+//   z-index: 1;
+//   margin: 1rem 0;
+
+//   button {
+//     text-transform: uppercase;
+//     font-size: 14px;
+//     font-weight: 500;
+//     letter-spacing: 2px;
+//     padding: 18px 20px;
+//     border-radius: 0.4rem;
+//     background: $primary-color-white;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+
+//     &:hover {
+//       background-color: $primary-color-peach;
+//       border: 1px solid $primary-color-white;
+
+//       color: $primary-color-white;
+//       transition: all 0.2s ease-in-out;
+//     }
+//   }
+// }
 
 /********** MIDDLE SECTION **********/
 .footer {

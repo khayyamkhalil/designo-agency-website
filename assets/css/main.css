@@ -1398,6 +1398,7 @@ main {
 
 a {
   text-decoration: none;
+  color: #1c1b1d;
 }
 
 ul li {
@@ -1408,28 +1409,33 @@ ul li {
 
 .btn {
   z-index: 1;
-  margin: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  background: white;
+  padding: 18px 20px;
+  outline: none;
+  cursor: pointer;
+  color: #1c1b1d;
 }
 
-.btn button {
+.btn a {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2px;
-  padding: 18px 20px;
-  border-radius: 0.4rem;
-  background: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
-.btn button:hover {
+.btn:hover {
   background-color: #e88069;
   border: 1px solid white;
   color: white;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.btn:hover a {
+  color: white;
 }
 
 /********** MIDDLE SECTION **********/
