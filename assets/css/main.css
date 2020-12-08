@@ -288,6 +288,7 @@ select:-webkit-autofill:focus {
 
 .projects__img img {
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
